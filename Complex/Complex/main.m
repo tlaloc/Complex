@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
+/*
 @interface Complex: NSObject
 // methods
 -(void) setReal: (double) a;
@@ -48,7 +49,7 @@
     NSLog(@"\n%g + %gi",real,imaginary);
 }
 @end
-
+*/
 
 int main(int argc, const char * argv[])
 {

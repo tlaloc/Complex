@@ -10,6 +10,7 @@
 		1212FA801563FF4F00488B6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1212FA7F1563FF4F00488B6B /* Foundation.framework */; };
 		1212FA831563FF4F00488B6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1212FA821563FF4F00488B6B /* main.m */; };
 		1212FA871563FF4F00488B6B /* Complex.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1212FA861563FF4F00488B6B /* Complex.1 */; };
+		1212FA97156402F000488B6B /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1212FA96156402F000488B6B /* Complex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +30,10 @@
 		1212FA7B1563FF4F00488B6B /* Complex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Complex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1212FA7F1563FF4F00488B6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1212FA821563FF4F00488B6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1212FA851563FF4F00488B6B /* Complex-Prefix.pch */ = {isa = PBXFileReference; path = "Complex-Prefix.pch"; sourceTree = "<group>"; };
+		1212FA851563FF4F00488B6B /* Complex-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Complex-Prefix.pch"; sourceTree = "<group>"; };
 		1212FA861563FF4F00488B6B /* Complex.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Complex.1; sourceTree = "<group>"; };
+		1212FA95156402F000488B6B /* Complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
+		1212FA96156402F000488B6B /* Complex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				1212FA821563FF4F00488B6B /* main.m */,
+				1212FA95156402F000488B6B /* Complex.h */,
+				1212FA96156402F000488B6B /* Complex.m */,
 				1212FA861563FF4F00488B6B /* Complex.1 */,
 				1212FA841563FF4F00488B6B /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1212FA831563FF4F00488B6B /* main.m in Sources */,
+				1212FA97156402F000488B6B /* Complex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +235,7 @@
 				1212FA8C1563FF4F00488B6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

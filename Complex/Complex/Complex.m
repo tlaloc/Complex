@@ -9,6 +9,10 @@
 #import "Complex.h"
 
 @implementation Complex
+
+@synthesize real, imaginary;
+
+/*
 {
     double real, imaginary;
 }
@@ -32,9 +36,19 @@
 {
     return imaginary;
 }
+*/
 
 -(void) print
 {
     NSLog(@"\n%g + %gi",real,imaginary);
+}
+
+-(Complex *) add: (Complex *) ComplexNum
+{
+	Complex *result = [[Complex alloc] init];
+	
+	result.real = ComplexNum.real + real;
+	result.imaginary = ComplexNum.imaginary + imaginary;
+	return result;
 }
 @end

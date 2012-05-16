@@ -9,10 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface Complex: NSObject
+
+@property double real, imaginary;
 // methods
--(void) setReal: (double) a;
--(void) setImaginary: (double) b;  
--(double) real;
--(double) imaginary;
+//-(void) setReal: (double) a;
+//-(void) setImaginary: (double) b;  
+//-(double) real;
+//-(double) imaginary;
 -(void) print; // display as a + bi
+-(Complex *) add: (Complex *) ComplexNum;
 @end

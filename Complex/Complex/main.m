@@ -8,59 +8,28 @@
 
 
 #import <Foundation/Foundation.h>
-
-/*
-@interface Complex: NSObject
-// methods
--(void) setReal: (double) a;
--(void) setImaginary: (double) b;  
--(double) real;
--(double) imaginary;
--(void) print; // display as a + bi
-@end
-
-@implementation Complex
-{
-    double real, imaginary;
-}
-
--(void) setReal: (double) a
-{
-    real = a;
-}
-
--(void) setImaginary: (double) b
-{
-    imaginary = b;
-}
-
--(double) real
-{
-    return real;
-}
-
--(double) imaginary
-{
-    return imaginary;
-}
-
--(void) print
-{
-    NSLog(@"\n%g + %gi",real,imaginary);
-}
-@end
-*/
+#include "Complex.h"
 
 int main(int argc, const char * argv[])
 {
 	
     @autoreleasepool {
-        Complex *myComplex = [[Complex alloc] init];
+        Complex *aComplex = [[Complex alloc] init];
 		
-		[myComplex setReal: 0.75];
-		[myComplex setImaginary: 0.25];
-		[myComplex print];
-        
+		[aComplex setReal: 7.5];
+		[aComplex setImaginary: -2.5];
+		[aComplex print];
+		
+		Complex *bComplex = [[Complex alloc] init];
+		[bComplex setReal: -0.25];
+		[bComplex setImaginary: 0.75];
+		[bComplex print];
+	
+		Complex *cComplex;
+		
+		cComplex = [aComplex add: bComplex];
+		[cComplex print];
+
     }
     return 0;
 }

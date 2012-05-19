@@ -7,40 +7,21 @@
 //
 
 #import "Complex.h"
+#import "Fraction.h"
 
 @implementation Complex
 
 @synthesize real, imaginary;
 
-/*
-{
-    double real, imaginary;
-}
-
--(void) setReal: (double) a
-{
-    real = a;
-}
-
--(void) setImaginary: (double) b
-{
-    imaginary = b;
-}
-
--(double) real
-{
-    return real;
-}
-
--(double) imaginary
-{
-    return imaginary;
-}
-*/
-
 -(void) print
 {
     NSLog(@"\n%g + %gi",real,imaginary);
+}
+
+-(void) setReal: (double) a andImaginary: (double) b
+{
+	real = a;
+	imaginary = b;
 }
 
 -(Complex *) add: (Complex *) ComplexNum
@@ -50,5 +31,14 @@
 	result.real = ComplexNum.real + real;
 	result.imaginary = ComplexNum.imaginary + imaginary;
 	return result;
+	
+	// add and print 2 fractions
+	Fraction *f1 = [[Fraction alloc] init]; 
+	Fraction *f2 = [[Fraction alloc] init]; 
+	Fraction *fracResult;
+	
+	[f1 print]; NSLog (@" +"); [f2 print]; NSLog (@"----");
+	fracResult = [f1 add: f2];
+	[fracResult print];
 }
 @end

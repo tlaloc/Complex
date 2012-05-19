@@ -16,13 +16,11 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         Complex *aComplex = [[Complex alloc] init];
 		
-		[aComplex setReal: 7.5];
-		[aComplex setImaginary: -2.5];
+		[aComplex setReal: 7.5 andImaginary: -2.5];
 		[aComplex print];
 		
 		Complex *bComplex = [[Complex alloc] init];
-		[bComplex setReal: -0.25];
-		[bComplex setImaginary: 0.75];
+		[bComplex setReal: -0.25 andImaginary: 0.75];
 		[bComplex print];
 	
 		Complex *cComplex;

@@ -11,11 +11,10 @@
 @interface Complex: NSObject
 
 @property double real, imaginary;
-// methods
-//-(void) setReal: (double) a;
-//-(void) setImaginary: (double) b;  
-//-(double) real;
-//-(double) imaginary;
--(void) print; // display as a + bi
+
+//  methods  //
+
+-(void) print;		// display as a + bi
+-(void) setReal: (double) a andImaginary: (double) b;
 -(Complex *) add: (Complex *) ComplexNum;
 @end

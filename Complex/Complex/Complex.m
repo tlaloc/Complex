@@ -7,7 +7,6 @@
 //
 
 #import "Complex.h"
-#import "Fraction.h"
 
 @implementation Complex
 
@@ -32,13 +31,5 @@
 	result.imaginary = ComplexNum.imaginary + imaginary;
 	return result;
 	
-	// add and print 2 fractions
-	Fraction *f1 = [[Fraction alloc] init]; 
-	Fraction *f2 = [[Fraction alloc] init]; 
-	Fraction *fracResult;
-	
-	[f1 print]; NSLog (@" +"); [f2 print]; NSLog (@"----");
-	fracResult = [f1 add: f2];
-	[fracResult print];
 }
 @end
